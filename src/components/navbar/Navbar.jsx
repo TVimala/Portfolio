@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
          <header>
-        <nav class="justify-content-around d-flex p-3">
+        <nav class="justify-content-between mx-3 d-flex p-3">
             <div class="name">
                 <h3>Tummuru Vimala Reddy</h3>
             </div>
