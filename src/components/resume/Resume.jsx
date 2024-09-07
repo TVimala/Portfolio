@@ -1,7 +1,9 @@
 import React from 'react'
 function Resume() {
   return (
-    <div>Resume</div>
+    <div>
+      <h1 className='text-center'>Resume</h1>
+    </div>
   )
 }
 export default Resume
