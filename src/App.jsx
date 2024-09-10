@@ -17,7 +17,6 @@ ref.current?.scrollIntoView({behavior: 'smooth'});
     {
       path: "",
       element: <RootLayout />,
-      // errorElement: <Routingerror />,
       children: [
         {
           path: "/projects",
