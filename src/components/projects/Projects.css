@@ -9,9 +9,6 @@
     object-fit: cover; 
 }
 .project {
-    /* padding: 20px; */
-    /* border: 1px black solid; */
-    /* width:500px; */
     align-items:start ;
 }
 .card{

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Resume.css' 
+import img from './image.png'
 function Resume() {
   return (
-    <div>
-      <h1 className='text-center'>Resume</h1>
+    <div className='text-center'>
+      <h1 className='resume'>RESUME</h1>
+      <img src={img} alt="Resume Image" />
     </div>
-  )
+  );
 }
-export default Resume
+export default Resume;
