@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Projects.css'
 function Projects() {
+  const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.substring(1));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    }, [location]);
   return (
     <div >
+       <section id="projects"></section>
       <div className='container'>
         <h1 className='projects'>PROJECTS</h1>
       <div className='project d-flex flex-row justify-content-evenly'>

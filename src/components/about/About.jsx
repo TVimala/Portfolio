@@ -1,8 +1,19 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './About.css'
 function About() {
+  useEffect(() => {
+    if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+}, [location]);
   return (
     <div>
+      <section id="about"></section>
       <div className='container'>
         <h1 className='aboutme'>ABOUT ME</h1>
          <div>
