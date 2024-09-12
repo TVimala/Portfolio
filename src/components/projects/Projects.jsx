@@ -6,7 +6,7 @@ function Projects() {
 
     useEffect(() => {
         if (location.hash) {
-            const element = document.getElementById(location.hash.substring(1));
+            const element = document.getElementById("projects");
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
