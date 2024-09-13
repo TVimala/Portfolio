@@ -19,6 +19,10 @@ ref.current?.scrollIntoView({behavior: 'smooth'});
       element: <RootLayout />,
       children: [
         {
+          path: "",
+          element: <Navigate to="/projects" replace />
+        },
+        {
           path: "/projects",
           element:<Projects></Projects>
         },
