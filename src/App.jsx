@@ -9,10 +9,6 @@ import Resume from './components/resume/Resume'
 import About from './components/about/About'
 import RootLayout from './RootLayout';
 function App() {
-  const ref = useRef(null);
-  const handleClick = () => {
-ref.current?.scrollIntoView({behavior: 'smooth'});
-  };
   const browserRouter = createBrowserRouter([
     {
       path: "",
@@ -42,5 +38,4 @@ ref.current?.scrollIntoView({behavior: 'smooth'});
     <RouterProvider router={browserRouter}/>
   );
 }
-
 export default App
