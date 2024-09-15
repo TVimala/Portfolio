@@ -7,3 +7,9 @@ span{
     justify-content: space-evenly;
     border-radius: 30px;
 }
+.dive:hover{
+    background-color:  rgb(109, 100, 225);
+}
+/* .dive:hover span{
+    color: white;
+} */

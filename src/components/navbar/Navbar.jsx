@@ -11,13 +11,13 @@ function Navbar() {
                     </div>
                     <div className="flex flex-col nav">
                         <ul className="navbar-nav d-flex flex-row">
-                            <li className="nav-item mx-2">
+                            <li className="nav-item mx-2 fs-5">
                                 <Link to="/projects#projects" className="nav-link">Projects</Link>
                             </li>
-                            <li className="nav-item mx-2">
+                            <li className="nav-item mx-2 fs-5">
                                 <Link to="/resume#resume" className="nav-link">Resume</Link>
                             </li>
-                            <li className="nav-item mx-2">
+                            <li className="nav-item mx-2 fs-5">
                                 <Link to="/about#about" className="nav-link">About Me</Link>
                             </li>
                         </ul>

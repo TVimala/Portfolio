@@ -11,11 +11,11 @@ import RootLayout from './RootLayout';
 function App() {
   const browserRouter = createBrowserRouter([
     {
-      path: "",
+      path: "/",
       element: <RootLayout />,
       children: [
         {
-          path: "",
+          path: "/",
           element: <Navigate to="/projects" replace />
         },
         {
