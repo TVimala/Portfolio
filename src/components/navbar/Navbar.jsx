@@ -7,7 +7,7 @@ function Navbar() {
             <header>
                 <nav className="justify-content-between mx-5 d-flex p-3">
                     <div className="name">
-                        <h3>Tummuru Vimala Reddy</h3>
+                        <h2>Tummuru Vimala Reddy</h2>
                     </div>
                     <div className="flex flex-col nav">
                         <ul className="navbar-nav d-flex flex-row">
