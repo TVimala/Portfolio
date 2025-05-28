@@ -1,10 +1,67 @@
-.aboutme{
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(135, 128, 231);
-    text-align: center;
+.about-wrapper {
+  background-color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
 }
-span{
-    color: rgb(135, 128, 231);
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  flex: 1;
+  text-align: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-right {
+  flex: 2;
+}
+
+.about-right h2 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.about-right h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.bold {
+  color: #1a1a1a;
+}
+
+.highlight {
+  color: #ffb400;
+  font-weight: 600;
+}
+
+.highlight2 {
+  color: rgb(105, 98, 200);
+  font-weight: 600;
+}
+
+.about-paragraph {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }

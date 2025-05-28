@@ -1,16 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.name{
+
+/* Brand name styling */
+.name {
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-      color: rgb(135, 128, 231);
+    color: rgb(135, 128, 231);
+    transition: transform 0.3s ease;
 }
-.nav{
+
+.name:hover {
+    transform: scale(1.02);
+}
+
+/* Navbar Links */
+.navbar-nav {
     font-family: Arial, Helvetica, serif;
     color: rgb(135, 128, 231);
-    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: rgb(135, 128, 231);
+    font-size: 1.1rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline on hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(135, 128, 231);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: rgb(105, 98, 200);
 }

@@ -5,7 +5,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import Projects from './components/projects/Projects'
-import Resume from './components/resume/Resume'
 import About from './components/about/About'
 import RootLayout from './RootLayout';
 function App() {
@@ -22,10 +21,10 @@ function App() {
           path: "/projects",
           element:<Projects></Projects>
         },
-        {
-          path: "/resume",
-          element:<Resume></Resume>
-        },
+        // {
+        //   path: "/resume",
+        //   element:<Resume></Resume>
+        // },
         {
           path: "/about",
           element: <About />
