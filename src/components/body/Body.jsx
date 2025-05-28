@@ -12,9 +12,10 @@ function Body() {
   return (
     <div>
        <div className='m-5'>
-       <h2>
-        👋 Hey, I'm Vimala
-        </h2>
+       <h2 className="styled-heading">
+  <span className="thin">👋 Hey,</span> <span className="thin">I'm</span> <span className="bold name">Vimala<span className="dot">..</span></span>
+  {/* <div className="subtext">2024–2025</div> */}
+</h2>
        <div className='body d-flex flex-row'>
        <p className='fs-2 p-3'>
         An innovative <span>full-stack developer</span> with a passion for crafting seamless web applications.

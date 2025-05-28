@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <header>
             <nav className="navbar-container d-flex justify-content-between align-items-center mx-5 p-3">
-                <div className="name">
+                <div className="navname">
                     <h2>Tummuru Vimala Reddy</h2>
                 </div>
                 <ul className="navbar-nav d-flex flex-row align-items-center mb-0">
