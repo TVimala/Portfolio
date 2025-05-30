@@ -80,6 +80,38 @@ Regression, Random Forest ML model trained on patient data to classify cirrhosis
             </p>
             </div>
           </div>   
+          <div className='card'>
+  <iframe 
+    src="https://sched-guru.vercel.app/" 
+    title="SchedGuru Project Preview"
+    className='project-image' 
+    scrolling="no">
+  </iframe>
+  <div className='card-body'>
+    <h3><span>SchedGuru</span></h3>
+    <p>
+      Full-Stack Web Application <br />
+      SchedGuru is a full-stack app for real-time faculty schedules and auto exam seating, built with React and Node.js. <br/>
+    <a href="https://github.com/TVimala/SchedGuru" target='_blank'>GitHub Code</a>
+    </p>
+  </div>
+</div>
+  <div className='card'>
+  <iframe 
+    src="https://tvimala.github.io/Energy_Prediction/templates/home.html" 
+    title="Energy_Prediction Project Preview"
+    className='project-image' 
+    scrolling="no">
+  </iframe>
+  <div className='card-body'>
+    <h3><span>EnergyPrediction</span></h3>
+    <p>
+      Machine Learning Project <br />
+Energy Predictor forecasts energy consumption using regression models trained on past usage data. <br />
+    <a href="https://github.com/TVimala/Energy_Prediction" target='_blank'>GitHub Code</a>
+    </p>
+  </div>
+</div>
         </div>
     </div>
 </div>

@@ -22,9 +22,6 @@ function Navbar() {
                     <li className="nav-item mx-3">
                         <Link to="/about#about" className="nav-link">About Me</Link>
                     </li>
-                    <li className="nav-item mx-3">
-                        <Link to="/contact#contact" className="nav-link">Contact</Link>
-                    </li>
                 </ul>
             </nav>
         </header>

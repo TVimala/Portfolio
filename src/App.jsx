@@ -7,6 +7,8 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import Projects from './components/projects/Projects'
 import About from './components/about/About'
 import RootLayout from './RootLayout';
+import Skills from './components/skills/Skills'
+import Footer from './components/footer/Footer'
 function App() {
   const browserRouter = createBrowserRouter([
     {
@@ -21,13 +23,17 @@ function App() {
           path: "/projects",
           element:<Projects></Projects>
         },
-        // {
-        //   path: "/resume",
-        //   element:<Resume></Resume>
-        // },
         {
           path: "/about",
           element: <About />
+        },
+        {
+          path: "/skills",
+          element: <Skills />
+        },
+         {
+          path: "/footer",
+          element: <Footer />
         }
       ]
     }
