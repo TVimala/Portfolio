@@ -17,7 +17,13 @@ function Navbar() {
                         <a href="TummuruVimalaReddy-resume.pdf" download className="nav-link">Resume</a>
                     </li>
                     <li className="nav-item mx-3">
+                        <Link to="/skills#skills" className="nav-link">Skills</Link>
+                    </li>
+                    <li className="nav-item mx-3">
                         <Link to="/about#about" className="nav-link">About Me</Link>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <Link to="/contact#contact" className="nav-link">Contact</Link>
                     </li>
                 </ul>
             </nav>
