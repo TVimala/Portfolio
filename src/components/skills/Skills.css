@@ -25,17 +25,18 @@
 }
 
 .skill-card {
-  background-color: #f3f0ff; 
+  background-color: white; 
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(135, 128, 231, 0.1);
   padding: 20px;
   width: 120px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
+  background-color: #f3f0ff; /* Light violet on hover */
   box-shadow: 0 8px 20px rgba(135, 128, 231, 0.2);
 }
 
