@@ -34,11 +34,11 @@ function About() {
 </p>
 
 <p className="about-paragraph">
-  My journey started with curiosity and evolved into a commitment to continuous learning. I've interned at <strong>CodeAlpha</strong>, where I created projects like a Task Scheduler and Recipe Book, gaining real-world experience in development and problem-solving.
+  My journey started with curiosity and evolved into a commitment to continuous learning. I've interned at <strong>CodeAlpha</strong>, where I created projects like a Issue Tracker,Task Scheduler and Recipe Book, gaining real-world experience in development and problem-solving.
 </p>
 
 <p className="about-paragraph">
-  Currently, I’m a part of the <strong>Google Developer Student Club</strong> CORE Team, organizing and leading events, mentoring peers, and fostering a community of innovation.
+  Currently, I’m a part of the <strong>Google Developer Groups</strong> as organizing and leading events, mentoring peers, and fostering a community of innovation.
 </p>
 
 <p className="about-paragraph">

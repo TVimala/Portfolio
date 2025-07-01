@@ -18,7 +18,7 @@ function Body() {
 </h2>
        <div className='body d-flex flex-row'>
        <p className='fs-2 p-3'>
-Skilled in <span>coding</span>, driven by <span>Problem-solving</span>, and empowered by collaboration — building tech with purpose and people in mind.        </p>
+Skilled in <span className='highlight'>coding</span>, driven by <span className='highlight2'>Problem-solving</span>, and empowered by collaboration — building tech with purpose and people in mind.        </p>
         <img src="https://media.istockphoto.com/id/1210817486/vector/one-line-portrait-of-a-beautiful-woman.jpg?s=612x612&w=0&k=20&c=TAZu5NtI445hpDmNzI-G2b2LA3LwlW7royV-Wq5ocDI=" alt="Not avaliable" />
        </div>
        {/* <div className='d-flex justify-content-center'>
