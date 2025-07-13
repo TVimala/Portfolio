@@ -14,7 +14,7 @@ function Navbar() {
                         <Link to="/projects#projects" className="nav-link">Projects</Link>
                     </li>
                     <li className="nav-item mx-3">
-                        <a href="TummuruVimalaReddy-resume.pdf" download className="nav-link">Resume</a>
+                        <a href="Vimala_Resume.pdf" download className="nav-link">Resume</a>
                     </li>
                     <li className="nav-item mx-3">
                         <Link to="/skills#skills" className="nav-link">Skills</Link>
