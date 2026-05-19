@@ -2,8 +2,12 @@ import React from 'react';
 import './Footer.css';
 
 function Footer() {
+  
   return (
-    <div className="footer-container px-5 py-5">
+    <>
+    <div className="footer-divider"></div>
+
+    <div className="footer-container">
       <div className="footer-content container d-flex flex-column flex-md-row justify-content-center align-items-start gap-5">
         
         {/* Left Section */}
@@ -39,8 +43,9 @@ function Footer() {
         </div>
       </div>
 
-      <p className="text-center mt-5">Designed and Handcoded by <span><strong>Vimala</strong></span> © 2025</p>
+      <p className="text-center mt-5">Designed and Handcoded by <span><strong>Vimala</strong></span> © 2026</p>
     </div>
+    </>
   );
 }
 

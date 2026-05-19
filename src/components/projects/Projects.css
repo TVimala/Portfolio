@@ -1,81 +1,200 @@
+/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Container */
+/* ===== Container ===== */
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: auto;
-  padding: 2rem;
+  padding: 4rem 1.5rem;
 }
 
-/* Section heading */
+/* ===== Heading ===== */
 .projects {
   font-family: "Inria Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
   color: rgb(135, 128, 231);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
+  letter-spacing: 1px;
 }
 
-/* Grid layout */
+/* ===== Grid ===== */
 .project {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.2rem;
 }
 
-/* Individual card */
+/* ===== Card ===== */
 .card {
-  background: #fff;
-  border-radius: 12px;
+  background: #ffffff;
+  border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(135, 128, 231, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ece8ff;
+  box-shadow: 0 8px 24px rgba(135, 128, 231, 0.12);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(135, 128, 231, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 14px 34px rgba(135, 128, 231, 0.22);
 }
 
-/* Project iframe */
+/* ===== Image / iframe ===== */
 .project-image {
   width: 100%;
-  height: 300px;
+  height: 240px;
   border: none;
+  object-fit: cover;
+  background: #f8f7ff;
 }
 
-/* Card body */
+/* ===== Body ===== */
 .card-body {
-  padding: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
+/* ===== Project Title ===== */
 .card-body h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.35rem;
+  margin-bottom: 0.9rem;
   color: rgb(135, 128, 231);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.card-body p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* GitHub link */
-.card-body a {
-  color: rgb(135, 128, 231);
-  text-decoration: none;
-  font-weight: 500;
+/* ===== Project Type Badge ===== */
+.card-body p strong {
   display: inline-block;
-  margin-top: 0.5rem;
-  transition: color 0.3s ease;
+  background: #f3efff;
+  color: rgb(120, 112, 220);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 0.9rem;
+  font-weight: 600;
+}
+
+/* ===== Description ===== */
+.card-body p {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #555;
+  flex-grow: 1;
+}
+
+/* ===== GitHub Button ===== */
+.card-body a {
+  margin-top: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 18px;
+  border-radius: 10px;
+  background: rgb(135, 128, 231);
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+/* ===== Card Body ===== */
+.card-body {
+  padding: 1.2rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;   /* controls spacing between elements */
+  flex-grow: 1;
+}
+
+/* ===== Title ===== */
+.card-body h3 {
+  font-size: 1.3rem;
+  color: rgb(135, 128, 231);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ===== Project Type ===== */
+.card-body p strong {
+  display: inline-block;
+  color: rgb(120, 112, 220);
+  font-size: 0.82rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 3px;
+  margin-bottom: 0.2rem;
+}
+
+/* ===== Description ===== */
+.project-description {
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: #555;
+  margin: 0;
+}
+
+/* ===== Button ===== */
+.card-body a {
+  margin-top: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 9px 16px;
+  border-radius: 10px;
+  background: rgb(135, 128, 231);
+  color: white;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .card-body a:hover {
-  color: rgb(105, 98, 200);
-  text-decoration: underline;
+  background: rgb(112, 104, 215);
+  transform: scale(1.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .projects {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  .card-body {
+    padding: 1.2rem;
+  }
+
+  .card-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-body p {
+    font-size: 0.92rem;
+  }
 }

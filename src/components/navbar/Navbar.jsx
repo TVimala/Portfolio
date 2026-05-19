@@ -14,13 +14,16 @@ function Navbar() {
                         <Link to="/projects#projects" className="nav-link">Projects</Link>
                     </li>
                     <li className="nav-item mx-3">
-                        <a href="Vimala_Resume.pdf" download className="nav-link">Resume</a>
+                        <a href="Tummuru Vimala Reddy Resume.pdf" download className="nav-link">Resume</a>
                     </li>
                     <li className="nav-item mx-3">
                         <Link to="/skills#skills" className="nav-link">Skills</Link>
                     </li>
                     <li className="nav-item mx-3">
                         <Link to="/about#about" className="nav-link">About Me</Link>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <Link to="/experience#experience" className="nav-link">Experience</Link>
                     </li>
                 </ul>
             </nav>
