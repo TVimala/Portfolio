@@ -9,7 +9,7 @@ import About from './components/about/About'
 import RootLayout from './RootLayout';
 import Skills from './components/skills/Skills'
 import Footer from './components/footer/Footer'
-import Experience from './components/experience/Experience'
+import Experience from './components/experience/Experience';
 
 function App() {
   const browserRouter = createBrowserRouter([

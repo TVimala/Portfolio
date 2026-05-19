@@ -1,7 +1,7 @@
 import React from 'react';
 import './Experience.css';
 import { useLocation } from 'react-router-dom';
-import {useEffect} from 'react-router-dom';
+import { useEffect } from 'react';
 function Experience() {
     const location = useLocation();
 
