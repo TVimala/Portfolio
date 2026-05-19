@@ -54,7 +54,7 @@ function Skills() {
 
   // ===== Core Concepts =====
   { name: "OOPs", icon: "https://cdn-icons-png.flaticon.com/512/6132/6132221.png" },
-  { name: "Data Structures", icon: "https://cdn-icons-png.flaticon.com/512/4248/4248443.png" },
+  { name: "Data Structures & Algorithms", icon: "https://cdn-icons-png.flaticon.com/512/2103/2103633.png"},  
   { name: "DBMS", icon: "https://cdn-icons-png.flaticon.com/512/2772/2772128.png" },
   { name: "Networking", icon: "https://cdn-icons-png.flaticon.com/512/2885/2885417.png" },
   { name: "Responsive Design", icon: "https://cdn-icons-png.flaticon.com/512/1828/1828919.png" },

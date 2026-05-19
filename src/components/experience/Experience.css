@@ -4,12 +4,13 @@
 }
 
 .experience-title {
-  text-align: center;
-  font-size: 2rem;
-  color: rgb(135, 128, 231);
-  margin-bottom: 45px;
   font-family: "Inria Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: rgb(135, 128, 231);
+  text-align: center;
+  margin-bottom: 3.5rem;
+  letter-spacing: 1px;
 }
 
 .experience-container {
