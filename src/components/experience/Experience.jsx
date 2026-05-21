@@ -60,14 +60,14 @@ function Experience() {
                     </span>
                   </div>
 
-                  <a
+                  {/* <a
                     href="ADD_CERTIFICATE_LINK_HERE"
                     target="_blank"
                     rel="noreferrer"
                     className="timeline-btn"
                   >
                     Certificate
-                  </a>
+                  </a> */}
 
                 </div>
 
@@ -117,14 +117,14 @@ function Experience() {
 
                   </div>
 
-                  <a
+                  {/* <a
                     href="ADD_PAPER_LINK_HERE"
                     target="_blank"
                     rel="noreferrer"
                     className="timeline-btn"
                   >
                     Paper
-                  </a>
+                  </a> */}
 
                 </div>
 
