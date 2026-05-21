@@ -17,24 +17,6 @@ function Projects() {
 
   const projects = [
     {
-      title: "SummariV",
-      type: "Multimodal AI Project",
-      description:
-        "Built a multimodal AI-powered video question answering system using speech recognition, visual reasoning, and RAG-based retrieval to answer questions from videos with timestamped evidence clips, achieving 0.834 answer relevance on the EDU-VSUM benchmark.",
-      image: "https://tvimala.github.io/SummariV/frontend/index.html",
-      github: "https://github.com/TVimala/SummariV",
-      iframe: true,
-    },
-    {
-      title: "Resume-JD Matcher",
-      type: "LLM & NLP Project",
-      description:
-        "Built an LLM-powered resume evaluation system using Google Gemini 2.5 Flash to analyze resumes against job descriptions, identify skill gaps, and provide AI-driven improvement suggestions through a Flask + React application.",
-      image: "https://resume-matcher-psi-eight.vercel.app/",
-      github: "https://github.com/TVimala/Resume-Matcher",
-      iframe: true,
-    },
-    {
       title: "Reso-Link",
       type: "Full-Stack Web Application",
       description:
@@ -50,33 +32,6 @@ function Projects() {
         "SchedGuru is a web application used for managing real-time faculty schedules and automated exam seating arrangements, built using React.js, Node.js, and MongoDB to streamline academic scheduling and reduce manual effort.",
       image: "https://sched-guru.vercel.app/",
       github: "https://github.com/TVimala/SchedGuru",
-      iframe: true,
-    },
-    {
-      title: "Vitamin Deficiency Finder",
-      type: "Community Service Project",
-      description:
-        "Designed and structured a responsive website that displays potential vitamin deficiencies based on symptoms selected by the user, aiming to promote health awareness through an intuitive interface.",
-      image: "https://vitamindfind.vercel.app/",
-      github: "https://github.com/pavancos/vitamind",
-      iframe: true,
-    },
-    {
-      title: "Task Scheduler",
-      type: "Web Development Project",
-      description:
-        "Built a task management web app enabling users to schedule tasks, set reminders, and manage daily activities. Implemented core operations like insert and delete for efficient task handling.",
-      image: "https://tvimala.github.io/task/index.html",
-      github: "https://github.com/TVimala/task",
-      iframe: true,
-    },
-    {
-      title: "Issue Tracking",
-      type: "Web Development Project",
-      description:
-        "Developed a web application to help teams efficiently track and manage issues and feature requests, streamlining project collaboration and workflow management.",
-      image: "https://tvimala.github.io/issuetracking/index.html",
-      github: "https://github.com/TVimala/issuetracking",
       iframe: true,
     },
     {
@@ -96,6 +51,51 @@ function Projects() {
       image: liverImage,
       github: "https://github.com/TVimala/MLPython",
       iframe: false,
+    },
+     {
+      title: "SummariV",
+      type: "Multimodal AI Project",
+      description:
+        "Built a multimodal AI-powered video question answering system using speech recognition, visual reasoning, and RAG-based retrieval to answer questions from videos with timestamped evidence clips, achieving 0.834 answer relevance on the EDU-VSUM benchmark.",
+      image: "https://tvimala.github.io/SummariV/frontend/index.html",
+      github: "https://github.com/TVimala/SummariV",
+      iframe: true,
+    },
+    {
+      title: "Resume-JD Matcher",
+      type: "LLM & NLP Project",
+      description:
+        "Built an LLM-powered resume evaluation system using Google Gemini 2.5 Flash to analyze resumes against job descriptions, identify skill gaps, and provide AI-driven improvement suggestions through a Flask + React application.",
+      image: "https://resume-matcher-psi-eight.vercel.app/",
+      github: "https://github.com/TVimala/Resume-Matcher",
+      iframe: true,
+    },
+    {
+      title: "Vitamin Deficiency Finder",
+      type: "Community Service Project",
+      description:
+        "Designed and structured a responsive website that displays potential vitamin deficiencies based on symptoms selected by the user, aiming to promote health awareness through an intuitive interface.",
+      image: "https://vitamindfind.vercel.app/",
+      github: "https://github.com/pavancos/vitamind",
+      iframe: true,
+    },
+    {
+      title: "Issue Tracking",
+      type: "Web Development Project",
+      description:
+        "Developed a web application to help teams efficiently track and manage issues and feature requests, streamlining project collaboration and workflow management.",
+      image: "https://tvimala.github.io/issuetracking/index.html",
+      github: "https://github.com/TVimala/issuetracking",
+      iframe: true,
+    },
+    {
+      title: "Task Scheduler",
+      type: "Web Development Project",
+      description:
+        "Built a task management web app enabling users to schedule tasks, set reminders, and manage daily activities. Implemented core operations like insert and delete for efficient task handling.",
+      image: "https://tvimala.github.io/task/index.html",
+      github: "https://github.com/TVimala/task",
+      iframe: true,
     },
   ];
 

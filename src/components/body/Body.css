@@ -1,63 +1,180 @@
-span{
-    color: rgb(135, 128, 231);
+.hero-section {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
-.dive{
-    color: white;
-    background-color:  rgb(135, 128, 231);
-    justify-content: space-evenly;
-    border-radius: 30px;
-}
-.dive:hover{
-    background-color:  rgb(109, 100, 225);
-}
+
+/* Heading */
+
 .styled-heading {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  margin-top: 60px;
-  position: relative;
-  display: inline-block;
+  margin-bottom: 50px;
+  line-height: 1.3;
 }
 
 .bold {
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   color: #222;
 }
 
 .thin {
   font-weight: 300;
-  font-size: 2.5rem;
-  margin-left: 8px;
+  font-size: 2.7rem;
   color: #555;
 }
 
-.boldname {
-  font-size: 3rem;
-  color: #111;
+.name {
   position: relative;
   display: inline-block;
+  margin-left: 10px;
 }
 
-/* 🔽 This adds the underline like the Portfolio image */
 .name::after {
   content: "";
   display: block;
   width: 100%;
-  height: 1px;
-  background-color: #aaa;
-  margin: 4px auto 0;
+  height: 2px;
+
+  background: linear-gradient(
+    to right,
+    rgba(135, 128, 231, 0.1),
+    rgb(135, 128, 231),
+    rgba(135, 128, 231, 0.1)
+  );
+
+  margin-top: 6px;
+  border-radius: 10px;
 }
 
 .dot {
   color: rgb(109, 100, 225);
-  font-size: 3rem;
-  margin-left: 2px;
 }
 
-.subtext {
-  font-size: 0.8rem;
-  color: #888;
-  margin-top: 5px;
-  font-weight: 300;
-  letter-spacing: 1px;
+/* Main content */
+
+.body-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text p {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: #444;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #ffb400;
+  font-weight: 700;
+}
+
+.highlight2 {
+  color: rgb(109, 100, 225);
+  font-weight: 700;
+}
+
+/* Image */
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 30px rgba(135, 128, 231, 0.12),
+    0 0 30px rgba(135, 128, 231, 0.08);
+
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+  .bold {
+    font-size: 2.6rem;
+  }
+
+  .thin {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    padding: 50px 18px;
+  }
+
+  .body-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .styled-heading {
+    margin-bottom: 35px;
+  }
+
+  .bold {
+    font-size: 2rem;
+  }
+
+  .thin {
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+  }
+
+  .hero-image img {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .bold {
+    font-size: 1.7rem;
+  }
+
+  .thin {
+    font-size: 1.4rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    max-width: 220px;
+  }
 }

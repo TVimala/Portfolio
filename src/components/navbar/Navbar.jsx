@@ -1,34 +1,90 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-    return (
-        <header>
-            <nav className="navbar-container d-flex justify-content-between align-items-center mx-5 p-3">
-                <div className="navname">
-                    <h2>Tummuru Vimala Reddy</h2>
-                </div>
-                <ul className="navbar-nav d-flex flex-row align-items-center mb-0">
-                    <li className="nav-item mx-3">
-                        <Link to="/projects#projects" className="nav-link">Projects</Link>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <a href="Tummuru Vimala Reddy Resume.pdf" download className="nav-link">Resume</a>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <Link to="/skills#skills" className="nav-link">Skills</Link>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <Link to="/about#about" className="nav-link">About Me</Link>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <Link to="/experience#experience" className="nav-link">Experience</Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    );
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header>
+
+      <nav className="navbar-container">
+
+        <div className="navname">
+          <h2>Tummuru Vimala Reddy</h2>
+        </div>
+
+        {/* Hamburger */}
+        <div
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {/* Nav Links */}
+        <ul className={`navbar-nav ${menuOpen ? "show-menu" : ""}`}>
+
+          <li className="nav-item">
+            <Link
+              to="/projects#projects"
+              className="nav-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              Projects
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <a
+              href="Tummuru Vimala Reddy Resume.pdf"
+              download
+              className="nav-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              Resume
+            </a>
+          </li>
+
+          <li className="nav-item">
+            <Link
+              to="/skills#skills"
+              className="nav-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              Skills
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link
+              to="/about#about"
+              className="nav-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link
+              to="/experience#experience"
+              className="nav-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              Experience
+            </Link>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+  );
 }
 
 export default Navbar;
