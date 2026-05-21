@@ -16,7 +16,7 @@ function Projects() {
   }, [location]);
 
   const projects = [
-      {
+    {
       title: "SummariV",
       type: "Multimodal AI Project",
       description:
@@ -26,12 +26,12 @@ function Projects() {
       iframe: true,
     },
     {
-      title: "SummariV",
-      type: "Multimodal AI Project",
+      title: "Resume-JD Matcher",
+      type: "LLM & NLP Project",
       description:
-        "Built a multimodal AI-powered video question answering system using speech recognition, visual reasoning, and RAG-based retrieval to answer questions from videos with timestamped evidence clips, achieving 0.834 answer relevance on the EDU-VSUM benchmark.",
-      image: "https://tvimala.github.io/SummariV/frontend/index.html",
-      github: "https://github.com/TVimala/SummariV",
+        "Built an LLM-powered resume evaluation system using Google Gemini 2.5 Flash to analyze resumes against job descriptions, identify skill gaps, and provide AI-driven improvement suggestions through a Flask + React application.",
+      image: "https://resume-matcher-psi-eight.vercel.app/",
+      github: "https://github.com/TVimala/Resume-Matcher",
       iframe: true,
     },
     {
@@ -47,7 +47,7 @@ function Projects() {
       title: "SchedGuru",
       type: "Full-Stack Web Application",
       description:
-        "SchedGuru is a full-stack app for real-time faculty schedules and auto exam seating, built with React and Node.js.",
+        "SchedGuru is a web application used for managing real-time faculty schedules and automated exam seating arrangements, built using React.js, Node.js, and MongoDB to streamline academic scheduling and reduce manual effort.",
       image: "https://sched-guru.vercel.app/",
       github: "https://github.com/TVimala/SchedGuru",
       iframe: true,
