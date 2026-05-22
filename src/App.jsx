@@ -6,7 +6,7 @@ import './App.css'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import Projects from './components/projects/Projects'
 import About from './components/about/About'
-import RootLayout from './RootLayout';
+import RootLayout from './RootLayout'
 import Skills from './components/skills/Skills'
 import Footer from './components/footer/Footer'
 import Experience from './components/experience/Experience';
