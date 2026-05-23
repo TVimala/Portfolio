@@ -1,32 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => setMenuOpen(prev => !prev);
+    const closeMenu = () => setMenuOpen(false);
+
     return (
         <header>
-            <nav className="navbar-container d-flex justify-content-between align-items-center mx-5 p-3">
-                <div className="navname">
+            <nav className="pf-navbar">
+                <div className="pf-navname">
                     <h2>Tummuru Vimala Reddy</h2>
                 </div>
-                <ul className="navbar-nav d-flex flex-row align-items-center mb-0">
-                    <li className="nav-item mx-3">
-                        <Link to="/projects#projects" className="nav-link">Projects</Link>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <a href="Tummuru Vimala Reddy Resume.pdf" download className="nav-link">Resume</a>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <Link to="/skills#skills" className="nav-link">Skills</Link>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <Link to="/about#about" className="nav-link">About Me</Link>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <Link to="/experience#experience" className="nav-link">Experience</Link>
-                    </li>
+
+                <button
+                    className={`pf-hamburger ${menuOpen ? 'open' : ''}`}
+                    onClick={toggleMenu}
+                    aria-label="Toggle navigation menu"
+                    aria-expanded={menuOpen}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul className={`pf-nav-list ${menuOpen ? 'pf-nav-open' : ''}`}>
+                    <li><Link to="/projects#projects" className="pf-nav-link" onClick={closeMenu}>Projects</Link></li>
+                    <li><a href="Tummuru Vimala Reddy Resume.pdf" download className="pf-nav-link" onClick={closeMenu}>Resume</a></li>
+                    <li><Link to="/skills#skills" className="pf-nav-link" onClick={closeMenu}>Skills</Link></li>
+                    <li><Link to="/about#about" className="pf-nav-link" onClick={closeMenu}>About Me</Link></li>
+                    <li><Link to="/experience#experience" className="pf-nav-link" onClick={closeMenu}>Experience</Link></li>
                 </ul>
             </nav>
+
+            {menuOpen && <div className="pf-nav-overlay" onClick={closeMenu}></div>}
         </header>
     );
 }
